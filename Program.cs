@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using WebApplicationIDL2;
@@ -5,7 +6,7 @@ using WebApplicationIDL2;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-//builder.Services.AddRazorPages();
+builder.Services.AddRazorPages();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -32,12 +33,12 @@ app.UseHttpsRedirection();
 
 //app.UseStaticFiles();
 
-//app.UseRouting();
+app.UseRouting();
 
 app.UseAuthorization();
 
 app.MapControllers();
 
-//app.MapRazorPages();
+app.MapRazorPages();
 
 app.Run();

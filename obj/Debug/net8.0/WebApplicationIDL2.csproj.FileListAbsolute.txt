@@ -141,3 +141,4 @@ C:\Users\Julio\source\repos\WebApplicationIDL2\WebApplicationIDL2\obj\Debug\net8
 C:\Users\Julio\source\repos\WebApplicationIDL2\WebApplicationIDL2\obj\Debug\net8.0\WebApplicationIDL2.pdb
 C:\Users\Julio\source\repos\WebApplicationIDL2\WebApplicationIDL2\obj\Debug\net8.0\WebApplicationIDL2.genruntimeconfig.cache
 C:\Users\Julio\source\repos\WebApplicationIDL2\WebApplicationIDL2\obj\Debug\net8.0\ref\WebApplicationIDL2.dll
+C:\Users\Julio\source\repos\WebApplicationIDL2\WebApplicationIDL2\obj\Debug\net8.0\WebApplicationIDL2.sourcelink.json

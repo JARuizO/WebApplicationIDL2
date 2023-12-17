@@ -27,7 +27,22 @@ namespace WebApplicationIDL2
                 });
             });
         }
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        {
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+                app.UseSwagger();
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("Swagger/v1/Swagger.json", "WebAPIAutores v1"));
+            }
+            app.UseHttpsRedirection();
+            
+            app.UseRouting();
 
+            app.UseAuthorization();
+
+            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
+        }
                   
         
     }
